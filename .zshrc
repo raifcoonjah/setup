@@ -1,8 +1,15 @@
+
+# author:: raifcoonjah
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="darkblood"
+
+# updates
+
 zstyle ':omz:update' mode auto      # update automatically without asking
 zstyle ':omz:update' frequency 13
+
 # Plugins
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
