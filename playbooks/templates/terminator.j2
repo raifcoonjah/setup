@@ -1,0 +1,41 @@
+[global_config]
+  dbus = False
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  ask_before_closing = never
+  always_split_with_profile = True
+[keybindings]
+  copy = <Primary>c
+  paste = <Primary>v
+[profiles]
+  [[default]]
+    background_color = "#282828"
+    font = FiraCode Nerd Font Medium 10.399
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    use_custom_command = True
+    custom_command = /usr/bin/zsh
+    use_system_font = False
+  [[After Dark]]
+    background_color = "#10111b"
+    cursor_bg_color = "#aaaaaa"
+    font = FiraCode Nerd Font Medium 10.399
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#2e3436:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#d3d7cf:#555753:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#eeeeec"
+    use_custom_command = True
+    custom_command = /usr/bin/zsh
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = After Dark
+[plugins]
